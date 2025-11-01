@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [ParallelGroupsSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="methods" name="AllGroupsParallel(failed)">
+    <groups>
+      <run>
+        <include name="demoblaze"/>
+        <include name="saucelabs"/>
+        <include name="expandtest"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pack09.ParallelGroupTests">
+        <methods>
+          <include name="sauceLabsTest"/>
+          <include name="expandTestSite"/>
+          <include name="demoBlazeLogin"/>
+        </methods>
+      </class> <!-- pack09.ParallelGroupTests -->
+    </classes>
+  </test> <!-- AllGroupsParallel(failed) -->
+</suite> <!-- Failed suite [ParallelGroupsSuite] -->

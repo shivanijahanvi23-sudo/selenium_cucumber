@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MultiSiteSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="MultiSiteTests(failed)">
+    <groups>
+      <run>
+        <include name="demoblaze"/>
+        <include name="saucelabs"/>
+        <include name="expand"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="pack09.MultiSiteTests">
+        <methods>
+          <include name="sauceLabsTest"/>
+          <include name="demoBlazeTest"/>
+          <include name="expandTest"/>
+        </methods>
+      </class> <!-- pack09.MultiSiteTests -->
+    </classes>
+  </test> <!-- MultiSiteTests(failed) -->
+</suite> <!-- Failed suite [MultiSiteSuite] -->
