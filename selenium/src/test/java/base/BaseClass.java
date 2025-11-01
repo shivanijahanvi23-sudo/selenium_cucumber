@@ -15,11 +15,14 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+		return
 	}
 		@AfterMethod
 		public void teardown() {
 			if(driver!=null) {
 				driver.close();
+				return;
+				
 			}
 		}
 
